@@ -1,0 +1,10 @@
+.banner{
+    width: 100%; 
+}
+main img{
+    width: 100%;
+}
+main section{
+    height: 500px;
+    background-color: gray;
+}
