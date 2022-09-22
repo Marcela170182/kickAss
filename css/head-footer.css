@@ -1,0 +1,74 @@
+.container-header1{
+    display: flex;
+    justify-content: space-between;
+}
+#logo-img{
+    width: 130px;
+}
+.icons{
+    margin-right: 50px;
+}
+header a{
+    margin-right: 30px;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header li{
+    color: white;
+    list-style: none;
+    font-style: normal;
+    text-align: center;
+}
+header input{
+    background-color: #14C38E;
+    height: 25px;
+    border: solid 1px #14C38E;
+    border-radius: 13px;
+    color: #413F42;
+}
+.user-icon{
+    color: black;
+}
+.cart-icon{
+    color: black;
+}
+.user-icon:hover{
+    color: #14C38E;
+}
+.cart-icon:hover{
+    color: #14C38E;
+}
+
+.navbar{
+    background-color: black;
+    height: 30px;
+}
+.banner{
+    width: 100%; 
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+footer li{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    line-height: 25px;
+}
+li:hover{
+    color: #14C38E;
+    font-weight: bolder;
+}
+h3{
+    color: #FEDB39;
+}
