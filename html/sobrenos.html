@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/sobrenos.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>KickAss</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.3/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -14,41 +15,39 @@
         <div class="container-header">
             <img id="logo-img" src="../img/header_logo.png" alt="logo esquerda">
             <form action="post">
-                <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquise aqui seu jogo">
+                <input type="text" id="pesquisa" name="pesquisa" placeholder="      Pesquise aqui seu jogo">
             </form>
             <div class="icons">
-                <a href="../html/cadastro.html"> <img id="user-icon" src="../img/header_user.png"></a> 
-                <a href="../html/carrinho.html"><img id="cart-icon" href="" src="../img/header_carrinho.png"></a>
+                <a href="../html/cadastro.html"><i class="fa-solid fa-user"></i></a> 
+                <a href="../html/carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
             
             </div>
         </div>
         
-        <nav class="nav-bar">
+        <nav class="nav-bar1">
             <ul class="nav-list">
-                <li class="nav home">
+                <li class="nav1 home">
                     <a class="nav-options" href="./index.html">Home</a>
                 </li>
-                <li class="nav sobrenos">
+                <li class="nav1 sobrenos">
                     <a class="nav-options" href="./sobrenos.html">Sobre nós</a>
                 </li>
-                <li class="nav games">
+                <li class="nav1 games">
                     <a class="nav-options" href="./games.html">Games</a>
                 </li>
-                <li class="nav Acessórios">
+                <li class="nav1 Acessórios">
                     <a class="nav-options" href="">Acessórios</a>
                 </li>
-                <li class="nav contato">
-                    <a class="nav-options" href="">Contato</a>
+                <li class="nav1 contato">
+                    <a class="nav-options" href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="banner">
-            <img class="banner-picture" src="../img/menu_fifa23.png" alt="Logo fifa 23">
-        </div>
-        <div class="sobrenos">
-            <img class="sobrenos-img" src="../img/sobrenos_background.png" alt="sobre nos background">
+       
+        <div class="sobrenos sobrenos-img">
+            
             <div class="sobrenos-text">
                 <h4>Sobre Nós</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
@@ -131,7 +130,7 @@
             </li>
         </ul>
 
-        <ul class="footer-list">
+        <ul class="footer-list" id="contato">
             <li><h1>Contato</h1></li>
             <li class="foot message">
                 <a class="foot-options" href="">Deixe sua mensagem</a>
@@ -168,4 +167,6 @@
         </div>
     </footer>
 </body>
+<script src="https://kit.fontawesome.com/7d29e981d5.js" crossorigin="anonymous"></script>
+<script src="../bootstrap-5.1.3/js/bootstrap.min.js"></script>
 </html>
