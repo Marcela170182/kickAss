@@ -59,6 +59,8 @@ h2{
     vertical-align: middle;
     height: 588px;
     padding-top: 10px;
+    background: url("../img/body_spiderman.png")center no-repeat;
+    background-size: contain;
 }
 
 .promo-text{
