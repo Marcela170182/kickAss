@@ -80,11 +80,34 @@
     font-weight: bold;
 }
 
-.banner-picture{
+.slideshow-banner{
+    max-width: 100%;
+    height: auto;
+    padding-top: 90px;
+    position: relative;
+   
+}
+
+.mySlides{
+    display: none;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from{opacity: 4;}
+    to {opacity: 1;}
+}
+
+
+/* .banner-picture{
     padding-top: 90px;
     width: 100%;
     vertical-align: middle;
-}
+} */
 .nav-footer{
     padding-top: 20px;
     padding-bottom: 20px;
