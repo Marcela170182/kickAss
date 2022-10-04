@@ -1,0 +1,132 @@
+
+.promo-bar{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+h2{
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promo-list{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+.promo-img{
+    border: solid 3px #0096408f;
+    width: 182px;
+    height: 198px;
+}
+
+.promo{
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.promo-options{
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.promo-options2{
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    font-size: medium;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.destaque{
+    background-color: black;
+    position: relative;
+}
+
+.destaque-img{
+    width: 100%;
+    vertical-align: middle;
+    height: 588px;
+    padding-top: 10px;
+}
+
+.promo-text{
+    position: absolute;
+    bottom: 150px;
+    background-color: rgba(0,0,0,0.5);
+    right: 20px;
+    color:white;
+    padding: 20px;
+}
+
+.acessories-bar{
+    background-color:#0096408f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+h3{
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.acessorie-list{
+    list-style: none;
+    margin:0;
+    padding: 10px;
+    text-align: center;
+}
+
+.acessorie-img{
+    
+    width: 182px;
+    height: 198px;
+}
+
+.acessorie{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: white;
+}
+
+.acessorie-options{
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.acessorie-options2{
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    font-size: medium;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.acessorie-text{
+    position: absolute;
+    bottom: 150px;
+    background-color: rgba(0,0,0,0.5);
+    right: 20px;
+    color:white;
+    padding: 20px;
+}
