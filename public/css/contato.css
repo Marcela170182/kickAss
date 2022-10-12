@@ -1,0 +1,70 @@
+main form{
+    width: 100%;
+   
+}
+
+#email, #name, #tel{
+    width: 100%;
+}
+
+
+main select{
+    width: 100%;
+}
+main textarea{
+    width: 100%;
+}
+
+main button{
+width: 100%;
+}
+label{
+    color: #FFB200;
+    font-size: 12px;
+    font-family: 'FontGame';
+}
+button{
+    background-color: #42855B;
+    color: white;
+    height: 25px;
+    border: none;
+    transition: all 0.8s;
+    font-family: 'FontGame';
+}
+button:hover{ 
+    background-color: #EFEFEF;
+    color: #42855B;
+    border: none;
+    height: 25px;
+    font-family: 'FontGame';
+    box-shadow: 3px 3px 2px gray;
+}
+h1{
+    font-family: 'FontGame';
+    color: #42855B;
+    text-align: center;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+}
+.contato-forms{
+    width: 40%;
+    margin-left: 20px;
+}
+.contato-image{
+    margin-right: 200px;
+}
+.mario-img{
+    width: 280px;
+}
+.sonic-img{
+    width: 100px;
+}
+p{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
