@@ -33,6 +33,6 @@ app.set('views', __dirname + '/src/views');
 
 
 
-app.listen(3000, ()=> {  // servidor para testes
-    console.log("Servidor rodando na porta 3000")
+app.listen(3333, ()=> {  // servidor para testes
+    console.log("Servidor rodando na porta 3333")
 })
