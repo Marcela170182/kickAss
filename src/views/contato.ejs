@@ -17,39 +17,7 @@
     </style>
 </head>
 <body>
-    <header id="menu">
-        <div class="container-header">
-            <img id="logo-img" src="../img/header_logo.png" alt="logo esquerda">
-            <form action="post">
-                <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquise aqui seu jogo">
-            </form>
-            <div class="icons">
-                <a href="/Register"> <img id="user-icon" src="../img/header_user.png"></a> 
-                <a href="/Cart"><img id="cart-icon" href="" src="../img/header_carrinho.png"></a>
-            
-            </div>
-        </div>
-        
-        <nav class="nav-bar">
-            <ul class="nav-list">
-                <li class="nav home">
-                    <a class="nav-options" href="/">Home</a>
-                </li>
-                <li class="nav sobrenos">
-                    <a class="nav-options" href="/About">Sobre nós</a>
-                </li>
-                <li class="nav games">
-                    <a class="nav-options" href="/Games">Games</a>
-                </li>
-                <li class="nav Acessórios">
-                    <a class="nav-options" href="/Accessories">Acessórios</a>
-                </li>
-                <li class="nav contato">
-                    <a class="nav-options" href="/Contact">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('partials/header') %>
     <main>
         
         <h1>Fale conosco</h1>
@@ -112,43 +80,7 @@
 
     </main>
 
-    <footer>
-        <ul>
-            <li><h3>Consoles</h3></li>
-            <a href=""><li>Xbox One</li></a>
-            <a href=""><li>Xbox Series X</li></a>
-            <a href=""><li>Playstation 4</li></a>
-            <a href=""><li>Playstation 5</li></a>
-        </ul>
-        <ul>
-            <li><h3>Acessórios</h3></li>
-            <a href=""><li>Controles</li></a>
-            <a href=""><li>Headphones</li></a>
-            <a href=""><li>Cadeiras Gamers</li></a>
-        </ul>
-        <ul>
-            <li><h3>Jogos</h3></li>
-            <a href=""><li>PC</li></a>
-            <a href=""><li>PS4</li></a>
-            <a href=""><li>PS5</li></a>
-            <a href=""><li>Xbox One</li></a>
-            <a href=""><li>Xbox Serie</li></a>
-            <a href=""><li>Nintendo</li></a>
-        </ul>
-        <ul>
-            <li><h3>Contato</h3></li>
-            <a href="/Contact"><li>Deixe sua mensagem</li></a>
-            <a href=""><li>contato@kickass.com</li></a>
-            <a href=""><li>(xx)1234-6543</li></a>
-        </ul>
-        <ul>
-            <li><h3>Acompanhe-nos</h3></li>
-            <a href=""><li><i class="fa-brands fa-instagram"></i> Instagram</li></a>
-            <a href=""><li><i class="fa-brands fa-facebook"></i> Facebook</li></a>
-            <a href=""><li><i class="fa-brands fa-twitter"></i> Twitter</li></a>
-            <a href=""><li><i class="fa-brands fa-youtube"></i> Youtube</li></a>
-        </ul>
-    </footer>
+    <%- include('partials/footer') %>
 
 
 

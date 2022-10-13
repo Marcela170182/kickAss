@@ -10,39 +10,7 @@
 </head>
 
 <body>
-    <header id="menu">
-        <div class="container-header">
-            <img id="logo-img" src="../img/header_logo.png" alt="logo esquerda">
-            <form action="post">
-                <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquise aqui seu jogo">
-            </form>
-            <div class="icons">
-                <a href="/Register"> <img id="user-icon" src="../img/header_user.png"></a> 
-                <a href="/Cart"><img id="cart-icon" href="" src="../img/header_carrinho.png"></a>
-            
-            </div>
-        </div>
-        
-        <nav class="nav-bar">
-            <ul class="nav-list">
-                <li class="nav home">
-                    <a class="nav-options" href="/">Home</a>
-                </li>
-                <li class="nav sobrenos">
-                    <a class="nav-options" href="/About">Sobre nós</a>
-                </li>
-                <li class="nav games">
-                    <a class="nav-options" href="/Games">Games</a>
-                </li>
-                <li class="nav Acessórios">
-                    <a class="nav-options" href="/Accessories">Acessórios</a>
-                </li>
-                <li class="nav contato">
-                    <a class="nav-options" href="/Contact">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('partials/header') %>
     <main>
         <img id="register-image" src="../img/cadastro_background.png" alt="Fundo de tela">
         <div class="container-register">
@@ -76,103 +44,6 @@
             </div>
         </div> 
         </main>
-    <footer id="footer-container" >
-    <nav class="nav-footer">     
-        <ul class="footer-list">
-            <li><h1>Consoles</h1></li>
-            <li class="foot xboxone">
-                <a class="foot-options" href="">Xbox One</a>
-                
-            </li>
-            <li class="foot xboxseriesx">
-                <a class="foot-options" href="">XBox series X</a>
-                
-            </li>
-            <li class="foot play4">
-                <a class="foot-options" href="">Playstation 4</a>
-                
-            </li>
-            <li class="foot play5">
-                <a class="foot-options" href="">Playstation 5</a>
-                
-            </li>
-        </ul>
-
-        <ul class="footer-list">
-            <li><h1>Acessórios</h1></li>
-            <li class="foot controles">
-                <a class="foot-options" href="">Controles</a>
-                
-            </li>
-            <li class="foot headphones">
-                <a class="foot-options" href="">Headphones</a>
-                
-            </li>
-            <li class="foot cadeiras">
-                <a class="foot-options" href="">Cadeiras Gamer</a>
-                
-            </li>
-            
-        </ul>
-
-        <ul class="footer-list">
-            <li><h1>Jogos</h1></li>
-            <li class="foot xboxone">
-                <a class="foot-options" href="">Xbox One</a>
-                
-            </li>
-            <li class="foot xboxseriesx">
-                <a class="foot-options" href="">XBox series X</a>
-                
-            </li>
-            <li class="foot play4">
-                <a class="foot-options" href="">Playstation 4</a>
-                
-            </li>
-            <li class="foot play5">
-                <a class="foot-options" href="">Playstation 5</a>
-                
-            </li>
-            <li class="foot pc">
-                <a class="foot-options" href="">PC</a>
-            </li>
-        </ul>
-
-        <ul class="footer-list">
-            <li><h1>Contato</h1></li>
-            <li class="foot message">
-                <a class="foot-options" href="">Deixe sua mensagem</a>
-            </li>
-            <li class="foot mail">
-                <a class="foot-options" href="mailto:contato@kickass.com">contato@kickass.com</a>
-            </li>
-            <li class="foot telefone">
-                <a class="foot-options">(11)4554-5445</a>
-            </li>
-        </ul>
-
-        <ul class="footer-list">
-            <li><h1>Acompanhe-nos</h1></li>
-            <li class="foot Instagram">
-                <a class="foot-options" href="">Instagram</a>
-            </li>
-            <li class="foot facebook">
-                <a class="foot-options" href="">Facebook</a>
-            </li>
-            <li class="foot twitter">
-                <a class="foot-options" href="">Twitter</a>
-            </li>
-            <li class="foot youtube">
-                <a class="foot-options" href="">Youtube</a>
-            </li>
-        </ul>
-    </nav>
-
-        
-
-        <div class="footer-img">
-            <a href="/"><img id="logo-footer" src="../img/header_logo.png" alt="logo"></a>
-        </div>
-    </footer>
+        <%- include('partials/footer') %>
 </body>
 </html>
