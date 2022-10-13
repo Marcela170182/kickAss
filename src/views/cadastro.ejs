@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,39 +12,40 @@
 
 <body>
     <%- include('partials/header') %>
-    <main>
-        <img id="register-image" src="../img/cadastro_background.png" alt="Fundo de tela">
-        <div class="container-register">
-            <div class="container-signin">
-                <h2>Ainda não é<br>cadastrado?</h2>
-                <form class="signin-form" action="#">
-                    
-                    <input  type="text" id="form-input" placeholder="Nome:" required>
-                    <input type="email" id="form-input" placeholder="E-mail:" required>
-                    <input type="text" id="form-input" placeholder="CPF:" required>
-                    <input type="password" id="form-input" placeholder="Senha:" required>
-                    <input type="tel" id="form-input"placeholder="Tel:"  required>
-                    <input type="adress" id="form-input" placeholder="Endereço:"  required>
-                    <input type="adressnumber" id="form-input" placeholder="Nº:" required>
-                    <input type="number" id="form-input" placeholder="Cep:"  required>
-                    <button class="signin-button" Type="submit">Cadastrar</button>
-                </form>
-            </div>
-            <div class="container-login">
-                <h3>Fazer Login</h3>
-                <div>
+        <main>
+            <img id="register-image" src="../img/cadastro_background.png" alt="Fundo de tela">
+            <div class="container-register">
+                <div class="container-signin">
+                    <h2>Ainda não é<br>cadastrado?</h2>
+                    <form class="signin-form" action="#">
 
-                <img id="login-img" src="../img/cadastro_perfil.png" alt="Perfil do usuario">
-                
+                        <input type="text" id="form-input" placeholder="Nome:" required>
+                        <input type="email" id="form-input" placeholder="E-mail:" required>
+                        <input type="text" id="form-input" placeholder="CPF:" required>
+                        <input type="password" id="form-input" placeholder="Senha:" required>
+                        <input type="tel" id="form-input" placeholder="Tel:" required>
+                        <input type="adress" id="form-input" placeholder="Endereço:" required>
+                        <input type="adressnumber" id="form-input" placeholder="Nº:" required>
+                        <input type="number" id="form-input" placeholder="Cep:" required>
+                        <button class="signin-button" Type="submit">Cadastrar</button>
+                    </form>
+                </div>
+                <div class="container-login">
+                    <h3>Fazer Login</h3>
+                    <div>
+
+                        <img id="login-img" src="../img/cadastro_perfil.png" alt="Perfil do usuario">
+
+                    </div>
+                    <form class="login-form" action="#">
+                        <input id="login-input" type="text" placeholder="E-mail:" required>
+                        <input id="login-input" type="password" placeholder="Senha:" required>
+                        <button class="login-button" Type="submit">Login</button>
+                    </form>
+                </div>
             </div>
-                <form class="login-form" action="#">
-                    <input id="login-input" type="text" placeholder="E-mail:"required>
-                    <input id="login-input" type="password" placeholder="Senha:"  required>
-                    <button class="login-button" Type="submit">Login</button>
-                </form>
-            </div>
-        </div> 
         </main>
         <%- include('partials/footer') %>
 </body>
+
 </html>
