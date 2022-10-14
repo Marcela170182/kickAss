@@ -1,9 +1,9 @@
 const path = require('path');
 
-const HomeController = {
+const homeController = {
     index: (req,res) => {
         res.render('index')
     }
 }
 
-module.exports = HomeController;
+module.exports = homeController;

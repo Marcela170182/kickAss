@@ -1,9 +1,9 @@
 const path = require("path");
-const RegisterController = {
+const registerController = {
     index : (req, res) => {
         res.render('cadastro');
     }
 }
 
 
-module.exports = RegisterController;
+module.exports = registerController;

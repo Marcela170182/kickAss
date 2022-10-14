@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
-const AccessoriesController = require('../controllers/accessoriesControllers');
+const accessoriesController = require('../controllers/accessoriesController');
 
 
-router.get('/Accessories', AccessoriesController.index);
+router.get('/accessories', accessoriesController.index);
 
 module.exports = router;

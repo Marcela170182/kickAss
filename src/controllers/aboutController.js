@@ -1,8 +1,8 @@
 const path = require('path');
-const AboutController = {
+const aboutController = {
     index: (req, res) => {
         res.render('sobrenos');
     }
 }
 
-module.exports = AboutController;
+module.exports = aboutController;

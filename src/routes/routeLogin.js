@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const LoginController = require('../controllers/loginControllers');
+const loginController = require('../controllers/loginController');
 
 
-router.get('/Login', LoginController.index);
+router.get('/Login', loginController.index);
 
 
 
