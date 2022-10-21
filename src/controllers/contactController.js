@@ -1,5 +1,5 @@
 const path = require('path');
-const ContactController = {
+const contactController = {
     index : (req, res) => {
         res.render('contato');
     
@@ -7,4 +7,4 @@ const ContactController = {
 }
 
 
-module.exports = ContactController;
+module.exports = contactController;

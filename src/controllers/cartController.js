@@ -1,8 +1,8 @@
 const path = require('path');
-const CartController = {
+const cartController = {
     index : (req, res) => {
         res.render('carrinho')
     }
 }
 
-module.exports = CartController;
+module.exports = cartController;

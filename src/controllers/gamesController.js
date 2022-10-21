@@ -1,8 +1,8 @@
 const path = require('path');
-const GameController = {
+const gameController = {
     index : (req, res) => {
         res.render('games');
     }
 }
 
-module.exports =  GameController;
+module.exports =  gameController;

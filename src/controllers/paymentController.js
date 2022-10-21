@@ -1,9 +1,9 @@
 const path = require('path');
-const PaymentController = {
+const paymentController = {
     index : (req, res) => {
         res.render('pagamento');
     
     }
 }
 
-module.exports = PaymentController;
+module.exports = paymentController;

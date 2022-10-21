@@ -1,9 +1,9 @@
 const path = require('path');
-const LoginController = {
+const loginController = {
     index : (req, res) => {
        res.send("Tela de login em construção");
     
     }
 }
 
-module.exports = LoginController;
+module.exports = loginController;

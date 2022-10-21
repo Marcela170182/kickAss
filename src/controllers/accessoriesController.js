@@ -1,9 +1,9 @@
 const path = require("path");
-const AccessoriesController = {
+const accessoriesController = {
     index : (req, res) => {
         res.render('acessorios');
     }
 }
 
 
-module.exports = AccessoriesController;
+module.exports = accessoriesController;
