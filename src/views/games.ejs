@@ -18,19 +18,24 @@
             </div>
             <div class="games">
                 <img class="games-background-img" src="../img/background_games.png">
+               <!--DIV COM LISTA DE JOGOS ///////////////////////////////////////////////////////-->
                 <div class="promo-games">
                     <h4>Promoções do mês</h4>
+                    <% product.forEach(function(product){
+
+                        %>     
                     <ul class="game-list">
+
                         <li class="game one">
                             <img class="game-img" src="../img/RR_games.png" alt="Red Dead Redemption 2">
-                            <a class="game-options" href="">Red Dead Redemption 2</a>
-                            <a class="game-options2" href="">De R$189,00 Por R$89,00</a>
+                            <a class="game-options" href=""><%= product.name %></a>
+                            <a class="game-options2" href=""><%= product.price %></a>
                             <a class="game-options3" href="">Comprar</a>
                         </li>
                         <li class="game two">
                             <img class="game-img" src="../img/sekiro_games.png" alt="Sekiro">
-                            <a class="game-options" href="">Sekiro</a>
-                            <a class="game-options2" href="">De R$189,00 Por R$89,00</a>
+                            <a class="game-options" href=""><%= product.name %></a>
+                            <a class="game-options2" href=""><%= product.price %></a>
                             <a class="game-options3" href="">Comprar</a>
                         </li>
                         <li class="game three">
@@ -40,6 +45,7 @@
                             <a class="game-options3" href="">Comprar</a>
                         </li>
                     </ul>
+                    <%})%>  
                     <ul class="game-list2">
                         <li class="game four">
                             <img class="game-img" src="../img/horizon_games.png" alt="Horizon">
@@ -81,6 +87,7 @@
                         </li>
                     </ul>
                 </div>
+               <!-- FIM DA LISTA DE JOGOS ////////////////////////////////////////////////////////-->
             </div>
 
         </main>
