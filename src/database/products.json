@@ -1,34 +1,65 @@
-[   {
-         "id": "1",   
-         "img": "null",
-         "name": "Red Dead Redemption 2",
-         "price": " DE R$ 180,00 POR R$ 120,00",
-         "stock": "yes"
-
-    },
-    {
-         "id": "2",   
-         "img": "null",
-         "name": "Sekiro",
-         "price": "De R$189,00 Por R$89,00",
-         "stock": "yes"
-    },
-    {
-         "id": "3",   
-         "img": "null",
-         "name": "Red Dead Redemption 2",
-         "price": " DE R$ 180,00 POR R$ 120,00",
-         "stock": "yes"
-    
-    },
-    {
-        "id": "4",   
-        "img": "null",
-        "name": "Sekiro",
-        "price": "De R$189,00 Por R$89,00",
-        "stock": "yes"
+[
+     {
+          "id": "1",
+          "img": "RR_games.png",
+          "title": "Red Dead Redemption 2",
+          "price": " DE R$ 180,00 POR R$ 120,00",
+          "stock": "yes"
+     },
+     {
+          "id": "2",
+          "img": "sekiro_games.png",
+          "title": "Sekiro",
+          "price": "De R$189,00 Por R$89,00",
+          "stock": "yes"
+     },
+     {
+          "id": "3",
+          "img": "fifa_games.png",
+          "title": "Fifa",
+          "price": "De R$189,00 Por R$89,00",
+          "stock": "yes"
+     },
+     {
+          "id": "4",
+          "img": "horizon_games.png",
+          "title": "Horizon",
+          "price": "De R$189,00 Por R$89,00",
+          "stock": "yes"
+     },
+     {
+          "id": "5",
+          "img": "spider_games.png",
+          "title": "Spider Man",
+          "price": "De R$189,00 Por R$89,00",
+          "stock": "yes"
+     },
+     {
+          "id": "6",
+          "img": "mariobross_games.png",
+          "title": "Mario Bros",
+          "price": "De R$189,00 Por R$89,00",
+          "stock": "yes"
+     },
+     {
+          "id": "7",
+          "img": "god_of_war_games.png",
+          "title": "God of War",
+          "price": "De R$189,00 Por R$89,00",
+          "stock": "yes"
+     },
+     {
+          "id": "8",
+          "img": "sonic_games.png",
+          "title": "Sonic",
+          "price": "De R$189,00 Por R$89,00",
+          "stock": "yes"
+     },
+     {
+          "id": "9",
+          "img": "dragon_balls_games.png",
+          "title": "Dragon ball",
+          "price": "De R$189,00 Por R$89,00",
+          "stock": "yes"
      }
-
-
-
 ]
