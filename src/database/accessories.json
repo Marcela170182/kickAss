@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "img": "acessorios_kitcombo.png",
+        "title": "Kit combo 1",
+        "price": " de 250,00 por R$ 189,00",
+        "stock": "yes"
+    },
+    {
+        "id": "2",
+        "img": "acessorios_kitcombo2.png",
+        "title": "Kit combo 2",
+        "price": " de 250,00 por R$ 189,00",
+        "stock": "yes"
+    },
+    {
+        "id": "3",
+        "img": "acessorios_kitcombo3 (2).png",
+        "title": "Kit combo 3",
+        "price": " de 250,00 por R$ 189,00",
+        "stock": "yes"
+    },
+    {
+        "id": "4",
+        "img": "acessorios_cadeira1.png",
+        "title": "Cadeira 1",
+        "price": "de 500,00 por R$ 289,00",
+        "stock": "yes"
+    },
+    {
+        "id": "5",
+        "img": "acessorios_cadeira2.png",
+        "title": "Cadeira 2",
+        "price": "de 500,00 por R$ 289,00",
+        "stock": "yes"
+    },
+    {
+        "id": "6",
+        "img": "acessorios_cadeira4.png",
+        "title": "Cadeira 2",
+        "price": "de 500,00 por R$ 289,00",
+        "stock": "yes"
+    },
+    {
+        "id": "7",
+        "img": "acessorios_headset1.png",
+        "title": "Headset 1",
+        "price": "de 300,00 por R$ 149,00",
+        "stock": "yes"
+    },
+    {
+        "id": "8",
+        "img": "acessorios_headset2.png",
+        "title": "Headset 2",
+        "price": "de 300,00 por R$ 149,00",
+        "stock": "yes"
+    },
+    {
+        "id": "9",
+        "img": "acessorios_ps.png",
+        "title": "Playstation 4",
+        "price": "de 1890,00 por R$ 1290,00",
+        "stock": "yes"
+    }
+]

@@ -16,74 +16,26 @@
             <div class="banner">
                 <img class="banner-picture" src="../img/menu_fifa23.png" alt="Logo Fifa 23">
             </div>
-
-            <div class="acessories">
-                <img class="acessories-background-img" src="../img/background_games.png" alt="Fundo games">
-                <div class="acessories-bar">
-                    <h2>Acessórios</h2>
-                    <ul class="acessories-list">
-                        <li class="acessories one">
-                            <img class="acessories-img" src="../img/acessorios_kitcombo.png" alt="Kit combo 1">
-                            <a class="acessories-options" href="">Kit combo 1</a>
-                            <a class="acessories-options2" href="">de 250,00 por R$ 189,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-                        <li class="acessories two">
-                            <img class="acessories-img" src="../img/acessorios_kitcombo2.png" alt="kit combo 2">
-                            <a class="acessories-options" href="">Kit combo 2</a>
-                            <a class="acessories-options2" href="">de 250,00 por R$ 189,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-                        <li class="acessories three">
-                            <img class="acessories-img" src="../img/acessorios_kitcombo3 (2).png" alt="kit combo 3">
-                            <a class="acessories-options" href="">Kit combo 3</a>
-                            <a class="acessories-options2" href="">de 250,00 por R$ 189,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-                    </ul>
-                    <ul class="acessories-list2">
-                        <li class="acessories one">
-                            <img class="acessories-img" src="../img/acessorios_cadeira1.png" alt="cadeira 1">
-                            <a class="acessories-options" href="">Cadeira 1</a>
-                            <a class="acessories-options2" href="">de 500,00 por R$ 289,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-                        <li class="acessories two">
-                            <img class="acessories-img" src="../img/acessorios_cadeira2.png" alt="cadeira 2">
-                            <a class="acessories-options" href="">Cadeira 2</a>
-                            <a class="acessories-options2" href="">de 500,00 por R$ 289,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-
-                        <li class="acessories three">
-                            <img class="acessories-img" src="../img/acessorios_cadeira4.png" alt="cadeira 3">
-                            <a class="acessories-options" href="">Cadeira 3</a>
-                            <a class="acessories-options2" href="">de 500,00 por R$ 289,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-                    </ul>
-                    <ul class="acessories-list3">
-                        <li class="acessories one">
-                            <img class="acessories-img" src="../img/acessorios_headset1.png" alt="headset 1">
-                            <a class="acessories-options" href="">Headset 1</a>
-                            <a class="acessories-options2" href="">de 300,00 por R$ 149,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-                        <li class="acessories two">
-                            <img class="acessories-img" src="../img/acessorios_headset2.png" alt="headset 2">
-                            <a class="acessories-options" href="">Headset 2</a>
-                            <a class="acessories-options2" href="">de 300,00 por R$ 149,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-                        <li class="acessories three">
-                            <img class="acessories-img" src="../img/acessorios_ps.png" alt="Playstation 4">
-                            <a class="acessories-options" href="">Playstation 4</a>
-                            <a class="acessories-options2" href="">de 1890,00 por R$ 1290,00</a>
-                            <a class="acessories-comprar" href="">Comprar</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <div class="productList">
+               
+                <h3> Produtos em Promoção! </h3>
+              
+               <!--Lista de acessorios Dinamica ///////////////////////////////////////////////////////-->                                      
+                                <% for (let accessorie of accessories) { %>
+                                        <div class="product">
+                                            <img class="game-img" src="/img/<%=accessorie.img %> " alt="null">
+                                            <br>
+                                            <%= accessorie.title %> <br> 
+                                            <%= accessorie.price %><br>
+                                            <a class="game-options3" href="">Comprar</a>
+                                         </div>
+                                        
+                                  <% }    %>
+                    <!-- FIM DA LISTA DE acessorios ////////////////////////////////////////////////////////-->
+                  </div>
+           
+                
+            
         </main>
 
         <%- include('partials/footer') %>
