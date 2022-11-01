@@ -10,12 +10,14 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const gameController = {
     index : (req, res) => {
 
-      
-        
-    
-
       return  res.render('games', {products});
        
+    },
+    
+    search : (req , res) => {
+      let search = req.query.keywords;
+      let productsToSearch = products.filter(product => product.title.toLowerCase().includes(search));
+      res.render('results' , {products : productsToSearch, search});
     }
 }
 
