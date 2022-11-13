@@ -90,6 +90,7 @@
 
 .mySlides{
     display: none;
+    width: 100%;
 }
 
 .fade{
@@ -123,14 +124,7 @@
     padding: 0;
 }
 
-h1{
-    font-size: 16px;
-    color: #fedb39;
-    padding: 0px 20px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    
-}
+
 
 .foot{
     padding: 0px 20px;

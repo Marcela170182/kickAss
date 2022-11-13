@@ -1,7 +1,16 @@
+body{
+    background-image: url(../img/background_games.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    
+}
+
 main form{
     width: 100%;
    
 }
+
 
 #email, #name, #tel{
     width: 100%;
@@ -40,9 +49,12 @@ button:hover{
     box-shadow: 3px 3px 2px gray;
 }
 h1{
-    font-family: 'FontGame';
-    color: #42855B;
-    text-align: center;
+    font-size: 16px;
+    color: #fedb39;
+    padding: 0px 20px;
+    margin-top: 84px;
+    margin-bottom: 5px;
+    
 }
 .main-container{
     display: flex;
@@ -66,5 +78,4 @@ p{
     font-weight: bolder;
     font-style: italic;
 }
-
 
