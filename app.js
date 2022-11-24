@@ -8,11 +8,12 @@ const routePayment = require("./src/routes/routePayment");
 const routeCart = require("./src/routes/routeCart");
 const routeLogin = require("./src/routes/routeLogin");
 const routeRegister = require('./src/routes/routeRegister');
+const routerUsuario = require('./src/routes/routeUsuario');
 
 let app = express();
 const path = require('path');
 
-app.use(express.urlencoded({ extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 
@@ -26,6 +27,7 @@ app.use('/', routePayment);
 app.use('/', routeCart);
 app.use('/', routeLogin);
 app.use('/', routeRegister);
+app.use('/', routerUsuario);
 app.use(express.static(path.join(__dirname, '/public')));
 
 

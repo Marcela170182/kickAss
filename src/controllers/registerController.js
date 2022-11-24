@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require('fs');
 
+
 const readFile = () => {
     const content = fs.readFileSync('src/database/users.json', 'utf-8');
     return (JSON.parse(content));
