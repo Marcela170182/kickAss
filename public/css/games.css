@@ -8,6 +8,11 @@
     height: 1200px;
 }
 
+#bannerg{
+    width: 100%;
+    box-shadow: 10px 6px 20px 0 #111;
+}
+
 /* h4{
     color:white;
     text-align: center;
@@ -146,4 +151,8 @@ h3{
     .titutloGames{
         justify-content: center;
         align-items: center;
+    }
+
+    .banner-games{
+
     }

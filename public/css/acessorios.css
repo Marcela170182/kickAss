@@ -168,3 +168,8 @@ h3{
     font-weight: bold;
     text-align: center;
 }
+
+.banner-picture{
+    width: 100%;
+    box-shadow: 10px 6px 20px 0 #111;
+}
