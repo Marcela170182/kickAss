@@ -5,3 +5,63 @@ body{
     background-position: center;
     
 }
+
+h1{
+    font-weight: 800;
+    font-size: 93px;
+    bottom: -184px;
+    position: relative;
+    color: white;
+    left: 623px;
+}
+
+.lista{
+    position: relative;
+    top: 202px;
+    font-size: 38px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 20%;
+    padding: 20px;
+    text-align: center;
+    height: 337px;
+    width: 336px;
+    left: 744px;
+  }
+
+.produto{
+    font-size: 18px;
+    position: relative;
+    right: 38px;
+    top: 35px;
+}
+
+.valor{
+    font-size: 16px;
+    position: relative;
+    left: 130px;
+    top: 15px;
+
+}
+
+.total{
+    font-size: 17px;
+    position: relative;
+    left: 66px;
+    top: 250px;
+  }
+.valor-total {
+    font-size: 17px;
+    position: relative;
+    left: 139px;
+    top: 231px;
+  }
+
+.confirma{
+    position: relative;
+    top: 201px;
+    font-size: 12px;
+    left: 1321px;
+    color: orange;
+    
+
+}
