@@ -6,62 +6,62 @@ body{
     
 }
 
-h1{
+.carrinho{
     font-weight: 800;
-    font-size: 93px;
-    bottom: -184px;
+    font-size: 50px;
+    bottom: -89px;
     position: relative;
     color: white;
-    left: 623px;
+    text-align: center;
 }
 
 .lista{
     position: relative;
-    top: 202px;
-    font-size: 38px;
+    top: 35px;
+    font-size: 33px;
     background-color: rgba(255, 255, 255, 0.1);
     margin-left: 20%;
-    padding: 20px;
+    padding: 17px;
     text-align: center;
-    height: 337px;
-    width: 336px;
-    left: 744px;
+    height: 432px;
+    width: 244px;
+    left: 680px;
   }
 
 .produto{
-    font-size: 18px;
+    font-size: 13px;
     position: relative;
     right: 38px;
-    top: 35px;
+    top: 35px
 }
 
 .valor{
-    font-size: 16px;
+    font-size: 13px;
     position: relative;
-    left: 130px;
-    top: 15px;
-
+    left: 66px;
+    top: 20px;
 }
 
 .total{
     font-size: 17px;
     position: relative;
-    left: 66px;
-    top: 250px;
+    left: 25px;
+    top: 318px;
   }
+  
 .valor-total {
     font-size: 17px;
     position: relative;
-    left: 139px;
-    top: 231px;
+    left: 99px;
+    top: 297px;
   }
 
 .confirma{
     position: relative;
-    top: 201px;
+    top: -2px;
     font-size: 12px;
-    left: 1321px;
+    left: 1102px;
     color: orange;
+  }
     
 
-}
