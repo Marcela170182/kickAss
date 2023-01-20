@@ -13,35 +13,47 @@
 <body>
     <%- include('partials/header') %>
         <main>
-            <section>
-                <h1 class="carrinho">SEU CARRINHO</h1>
-
-                <form class="lista">
-
-                    <p>Sua lista</p>
-
-                    <li class="produto">
-
-                        NOME DO PRODUTO
-
-                    </li>
-                    <p class="valor">
-
-                        R$ 250,00
-
-                    </p>
-                    <p class="total">
-
-                        TOTAL :
-
-                    </p>
-                    <p class="valor-total"> 
-
-                        R$ 250,00
-                    </p>
-                </form>
-                <button type="submit" class="confirma">CONFIRMA SUA COMPRA</button>
-            </section>
+            <div class="carrinho">
+                <img class="carrinho-img" src="../img/background_games.png" alt="fundo">
+                <div class="carrinho-text">
+                    <h4>Carrinho</h4>
+                    <ul class="nav-produtos">
+                        <li class="prod">
+                        <a class="prod-options">Produto</a>
+                        </li>
+                        <li class="prod1">
+                        <a class="prod-options">Preço</a>
+                        </li>
+                        <li class="prod2">
+                        <a class="prod-options">QTD</a>
+                        </li>
+                        <li class="prod3">
+                        <a class="prod-options">Total</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-produtos">
+                        <li class="prod0">
+                        <img class="prod-img"src="../img/carrinho_RRredemption.png" alt="Red Dead Redemption II">    
+                        <a class="prod-options">Read Dead Redemption II</a>
+                        </li>
+                        <li class="prod1">
+                        <a class="prod-options">R$189,99</a>
+                        </li>
+                        <li class="prod2">
+                        <a class="prod-options">01</a>
+                        </li>
+                        <li class="prod3">
+                        <a class="prod-options">R$189,99</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            
+                    
+    
+                
+                  
         </main>
         <%- include('partials/footer') %>
 

@@ -12,12 +12,36 @@
 
 <body>
     <%- include('partials/header') %>
-        <main>
+    <main>
+        
+        <div class="pagamento">
+            <img class="pagamento-img" src="../img/sobrenos_background.png" alt="sobre nos background">
+            <div class="pagamento-text">
+                <h4>Lista de Produtos</h4>
+                <ul class="nav-produtos">
+                    <li class="prod">
+                    <a class="prod-options">Id</a>
+                    <a class="prod-options" href="">01</a>
 
-            <section>
-                <p>inserir conteudos</p>
-            </section>
-        </main>
+                    </li>
+                    <li class="prod">
+                        <a class="prod-options">Nome</a>
+                        <a class="prod-options" href="">Jogo</a>
+    
+                     </li>
+                    <li class="prod">
+                        <a class="prod-options">Ações</a>
+                        <img src="../img/editar_produto.png" alt="">
+                        <img src="../img/lixeira_produto.png" alt="">
+        
+                    </li>
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </main>
         <%- include('partials/footer') %>
 </body>
 
