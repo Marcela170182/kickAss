@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+   
+
+    <%- include('partials/header2') %>
+
+    <% if (typeof(usuario) == 'undefined' ) { %>
+        Olá usuario
+     <% } else { %>
+       Olá <%= usuario.name %> 
+      <% } %>
+    <div class="img-principal">
+        <img src="/img/LIsa.jpg" alt="">
+    </div>
+
+    <div class="form">
+        <form class="products-form" action="/products" method="POST">
+            <input type="text" class="products-form-input" placeholder="imagem:" name="img" required> <br> 
+            <input type="text" class="products-form-input" placeholder="Nome:" name="title" required> <br> 
+            <input type="number" class="products-form-input" placeholder="Preço:" name="price"    required> <br>
+            <input type="text" class="products-form-input" placeholder="Estoque:" name="stock"    required>
+            <button class="products-form-button" Type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

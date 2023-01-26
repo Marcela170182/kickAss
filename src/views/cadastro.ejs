@@ -35,11 +35,20 @@
                     <div>
 
                         <img id="login-img" src="../img/cadastro_perfil.png" alt="Perfil do usuario">
-
+                        <% if(typeof errors !== 'undefined') { %>
+                            <ul>
+                                <% for(let error in errors){%>
+                                    <li> 
+                                        <b> <%= error %>:</b>
+                                        <%= errors[error].msg %> 
+                                    </li>
+                                <%} %>    
+                            </ul>
+                        <% } %>
                     </div>
-                    <form class="login-form" action="#">
-                        <input id="login-input" type="text" placeholder="E-mail:" required>
-                        <input id="login-input" type="password" placeholder="Senha:" required>
+                    <form class="login-form" action="/Login" method="POST">
+                        <input id="login-input" type="text" placeholder="E-mail:" name="email" required>
+                        <input id="login-input" type="password" placeholder="Senha:" name="password" required>
                         <button class="login-button" Type="submit">Login</button>
                     </form>
                 </div>

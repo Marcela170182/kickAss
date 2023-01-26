@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-principal{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top:  7px;
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.products-form-input{
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 11px;
+    width: 300px;
+    padding: 8px;
+    margin: 4px;
+}
+
+.products-form-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-color: rgb(107, 204, 107);
+    border: 2px solid rgb(78, 87, 64);
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+
+}
