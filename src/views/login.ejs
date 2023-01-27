@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>KickAss</title>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main class="main">
+           
+         <div class="fundo">
+                <div class="container-login">
+                    <div>
+                        <img src="../../img/header_logo.png" alt="">
+                    </div>
+                    <div>
+                        <% if(typeof errors !== 'undefined') { %>
+                            <ul>
+                                <% for(let error in errors){%>
+                                    <li> 
+                                        <b> <%= error %>:</b>
+                                        <%= errors[error].msg %> 
+                                    </li>
+                                <%} %>    
+                            </ul>
+                        <% } %>
+                    </div>
+                    <form class="login-form" action="/Login" method="POST">
+                        <input id="login-input" type="text" placeholder="E-mail:" name="email" required>
+                        <input id="login-input" type="password" placeholder="Senha:" name="password" required>
+                        <button class="login-button" Type="submit">Login</button>
+                    </form>
+                    <p>Ainda não tem uma conta? <a href="/Register">Criar conta</a></p>
+                </div>
+            </div>
+            </div>
+        </main>
+        
+        <%- include('partials/footer') %>
+    </body>
+    
+  
+    </html>

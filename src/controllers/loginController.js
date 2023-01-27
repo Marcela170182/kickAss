@@ -7,7 +7,7 @@ const loginValidations = require('../middlewares/loginMid2');
 
 const loginController = {
     index : (req, res) => {
-       res.render("cadastro");
+       res.render("login");
     
     },
     login : [loginValidations, (req, res) => {
@@ -15,7 +15,7 @@ const loginController = {
             
             const errors = validationResult(req, res);
             if (!errors.isEmpty()) {
-                return res.render('cadastro', { errors: errors.mapped() });
+                return res.render('login', { errors: errors.mapped() });
             } else {
               req.session.user = req.user;
               

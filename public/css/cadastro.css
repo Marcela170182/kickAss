@@ -1,28 +1,38 @@
-#register-img{
-    width: 100%;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 .container-register{
     display: flex;
 }
 
-
+.fundo{
+    background-image: linear-gradient(to right top, #0a1a0b, #0b240d, #082f0c, #043a09, #004504);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .container-signin{
-    position: absolute;
-    top: 30%;
-    font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-left: 20%;
-    padding: 20px;
-    text-align: center;
-
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:#c2cbc14b;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    border-radius: 8%;
 }
 
 h2{
-    color: white;
+    color: rgb(16, 43, 7);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
     
 }
 
@@ -33,79 +43,35 @@ h2{
 
     
 #form-input{
-    display: grid;
-    width: 300px;
-    height: 30px;
-    background-color: #d9d9d9;
-    border-radius: 10px;
-    border:solid 1px #d9d9d9;
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
-    text-transform: uppercase;
-    
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    color:#465cb4;
+    border: none;
+    width: 300px;
+    height: 45px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
     
 }
 
 .signin-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
-    height: 30px;
-    background-color: #0038FF;
+    height: 40px;
+    background-color: #073d1f;
     border-radius: 10px;
-    border:solid 1px #0038FF;
-    margin-top: 10px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.container-login{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-left: 20%;
-    padding: 20px;
-    text-align: center;
-}
-
-h3{
-    color: white;
-}
-
-#login-img{
-    width: 40%;
+    border:solid 1px #000000;
     margin-top: 20px;
-    
-}
-
-.login-form{
-    display: inline-block;
-
-}
-
-#login-input{
-    display: grid;
-    width: 300px;
-    height: 30px;
-    background-color: #d9d9d9;
-    border-radius: 10px;
-    border:solid 1px #d9d9d9;
-    margin-top: 10px;
-    text-transform: uppercase;
-}
-
-.login-button{
-    width: 300px;
-    height: 30px;
-    background-color: #0038FF;
-    border-radius: 10px;
-    border:solid 1px #0038FF;
-    margin-top: 10px;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 

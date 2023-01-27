@@ -35,7 +35,7 @@ const routePayment = require("./src/routes/admList");
 const routeCart = require("./src/routes/routeCart");
 const routeLogin = require("./src/routes/routeLogin");
 const routeRegister = require('./src/routes/routeRegister');
-
+const routeCloseSession = require('./src/routes/closeSession');
 
 //Rotas
 app.use('/', admRegister);
@@ -48,6 +48,7 @@ app.use('/', routePayment);
 app.use('/', routeCart);
 app.use('/', routeLogin);
 app.use('/', routeRegister);
+app.use('/', routeCloseSession);
 app.use(express.static(path.join(__dirname, '/public')));
 
 

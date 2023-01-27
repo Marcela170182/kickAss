@@ -14,12 +14,13 @@
     <%- include('partials/header2') %>
 
     <% if (typeof(usuario) == 'undefined' ) { %>
-        Olá usuario
+      <h1>  Bem-vindo </h1>
      <% } else { %>
-       Olá <%= usuario.name %> 
+       <h1>Bem-vindo, <%= usuario.name %> </h1> 
       <% } %>
-    <div class="img-principal">
-        <img src="/img/LIsa.jpg" alt="">
+     
+    <div class="principal">
+        <h2>Cadastre seus produtos:</h2>
     </div>
 
     <div class="form">

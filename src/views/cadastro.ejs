@@ -13,47 +13,22 @@
 <body>
     <%- include('partials/header') %>
         <main>
-            <img id="register-image" src="../img/cadastro_background.png" alt="Fundo de tela">
+            <div class="fundo">
             <div class="container-register">
                 <div class="container-signin">
-                    <h2>Ainda não é<br>cadastrado?</h2>
+                    
+                    <h2>Ainda não é cadastrado? </h2>
                     <form class="signin-form" action="/Register" method="POST">
 
                         <input type="text" id="form-input" placeholder="Nome:" name="name" required>
                         <input type="email" id="form-input" placeholder="E-mail:" name="email"    required>
                         <input type="text" id="form-input" placeholder="CPF:" name="cpf" required>
                         <input type="password" id="form-input" placeholder="Senha:" name="password"     required>
-                        <input type="tel" id="form-input" placeholder="Tel:" name="phone"   required>
-                        <input type="adress" id="form-input" placeholder="Endereço:" name="adress"    required>
-                        <input type="adressnumber" id="form-input" placeholder="Nº:" name="number"   required>
-                        <input type="number" id="form-input" placeholder="Cep:" name="cep"    required>
                         <button class="signin-button" Type="submit">Cadastrar</button>
                     </form>
                 </div>
-                <div class="container-login">
-                    <h3>Fazer Login</h3>
-                    <div>
-
-                        <img id="login-img" src="../img/cadastro_perfil.png" alt="Perfil do usuario">
-                        <% if(typeof errors !== 'undefined') { %>
-                            <ul>
-                                <% for(let error in errors){%>
-                                    <li> 
-                                        <b> <%= error %>:</b>
-                                        <%= errors[error].msg %> 
-                                    </li>
-                                <%} %>    
-                            </ul>
-                        <% } %>
-                    </div>
-                    <form class="login-form" action="/Login" method="POST">
-                        <input id="login-input" type="text" placeholder="E-mail:" name="email" required>
-                        <input id="login-input" type="password" placeholder="Senha:" name="password" required>
-                        <button class="login-button" Type="submit">Login</button>
-                    </form>
-                </div>
+               
             </div>
-            
         </main>
         
         <%- include('partials/footer') %>

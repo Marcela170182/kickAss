@@ -1,8 +1,12 @@
 .sobrenos{
     background-color: black;
     position: relative;
+    
+    text-align: center;
 }
-
+ p{
+    margin: 20px;
+ }
 .sobrenos-img{
     width: 100%;
     vertical-align: middle;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 .headerPartials{ 
     display: block;
 }
@@ -13,8 +14,15 @@
     min-height: 64px;
     padding: 12px;
     justify-content: left;
+}
 
-
+a{
+    text-decoration: none;
+    color: rgb(235, 238, 62);
+    font-family: 'Raleway', sans-serif;
+}
+#final{
+    margin-left: 900px;
 }
 #pesquisa{
     margin-left: 10px;
@@ -56,6 +64,7 @@
     text-decoration: none;/*tira o sublinhado*/
     color: rgb(235, 238, 62);
     padding-left: 20px;
+    font-family: 'Raleway', sans-serif;
 
 
 }
