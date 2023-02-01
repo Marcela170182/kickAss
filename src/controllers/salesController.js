@@ -1,13 +1,13 @@
 const path = require('path');
 const fs = require("fs");
-const productRequest = require('../requests/productRequest');
+const saleRequest = require('../requests/saleRequest');
 
-const admRegisterController = {
+const salesController = {
 	list : (req, res) => {
-		productRequest.getProducts().
+		saleRequest.getSales().
 		then(productsReturned =>{
 		  products = productsReturned.data;
-		  return  res.render('admList', {products})
+		  return  res.render('listSales', {products})
 		})
 		.catch(err => {
 		  console.log('error');
@@ -17,23 +17,21 @@ const admRegisterController = {
 	
 	index:  (req, res) => {
         
-       return res.render('admRegister');
+       return res.render('products');
     
     },
     create : async (req, res) => {
       
-		let newProduct = {
+    let successMsg = ("Compra realizada com sucesso!");
+		
+		let sale = {
         
-			img : req.file.filename,
-			title: req.body.title,
-			price: req.body.price,
-			stock: req.body.stock,
-				
-		  }
+        ...req.body,			
+      }
       
-      productRequest.createProduct(newProduct).
+      saleRequest.createSale(sale).
 		then(productReturn => {			
-			res.redirect('/products')
+			res.render('index' , {successMsg : successMsg})
 		})
 		.catch(error => {
 			console.log(error);
@@ -45,10 +43,10 @@ const admRegisterController = {
    edit : (req, res) => {
     let id = req.params.id;
 		let product;
-		productRequest.getProduct(id)
+		saleRequest.getSale(id)
 		.then(productReturn => {
 			product = productReturn.data;
-			res.render('admEdit', {product})
+			res.render('editProducts', {product})
 		}
 		)
 		.catch(error => {
@@ -59,7 +57,7 @@ const admRegisterController = {
     	let id = req.params.id;
 		let productEdit;
 		
-		productRequest.getProduct(id)
+		saleRequest.getSale(id)
 		.then(productReturn => {
 			productEdit = productReturn.data;
 
@@ -71,9 +69,9 @@ const admRegisterController = {
 			return productEdit;
 		})
 		.then(productEdit => {
-			productRequest.editProduct(productEdit, id)
+			saleRequest.editSale(productEdit, id)
 			.then(edited => {
-			return 	res.redirect('/list');
+			return 	res.redirect('/listSale');
 			})
 		})
 		.catch(error => {
@@ -82,9 +80,9 @@ const admRegisterController = {
    },
    destroy : (req, res) => {
 	let id = req.params.id
-	productRequest.deleteProduct(id)
+	saleRequest.deleteSale(id)
 	.then(deleted => {
-		return res.redirect('/list')
+		return res.redirect('/listSale')
 	})	
 	.catch(error => {
 		console.log(error);
@@ -92,4 +90,4 @@ const admRegisterController = {
 }
 }
 
-module.exports = admRegisterController;
+module.exports = salesController;

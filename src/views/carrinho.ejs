@@ -9,51 +9,86 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>KickAss</title>
 </head>
-
 <body>
     <%- include('partials/header') %>
-        <main>
-            <div class="carrinho">
-                <img class="carrinho-img" src="../img/background_games.png" alt="fundo">
-                <div class="carrinho-text">
-                    <h4>Carrinho</h4>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>PRODUTO</th>
-                                <th>PREÇO</th>
-                                <th>QTD</th>
-                                <th>EXCLUIR</th>
-                                <th>TOTAL</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>prod</th>
-                                <th>p</th>
-                                <th>1245</th>
-                                
-                            </tr>
-                            <tr>
-                                <th>fiulgo</th>
-                                <th>23rfgg</th>
-                                <th>32525</th>
-                                <th>dfdasgfh</th>
-                            </tr>
-                         
-                    </table>
+    <main>
+        <div class="carrinho">
+            <div class="carrinho-text">
+                
+                <table class="table">
+                   
+                    <thead>
+                        <tr>
+                            <th>PRODUTO</th>
+                            <th>PREÇO</th>
+                            <th>QTD</th>
+                            <th>EXCLUIR</th>
+                            
+                        </tr>
+                    </thead>
+                   
+                    <tfoot>
+                        <tr>
+                            <th colspan="4" style="text-align:right">Total:</th>
+                            <% if (carts && carts.length) { %>
+                            <th>R$<%= carts.reduce((acc, cart) => acc + (cart.quantity * cart.price), 0) %></th>
+                            <% } else { %>
+                              <th>R$ 0 </th>
+                              <% } %>
+                        </tr>
+                 
+                    </tfoot>
                     
+                    <tbody>
+                      <% if (carts && carts.length) { %>
+                        <% for (let cart of carts) { %>
+                        <tr>
+                            <td> <img class="product-img" src="../../img/<%=cart.img %>" alt="produto"></td>
+                            <td id="preco">R$<%= cart.quantity * cart.price %></td>
+                            <td class="qty">
+                                <form action="/Cart/increment" method="post">
+                                    <input type="hidden" name="itemId" value="<%= cart.id_games %>">
+                                    <button id="mais" class="mais-menos" type="submit">+</button>
+                                </form>
+                                <span class="count"><%= cart.quantity %></span>
+                                <form action="/Cart/decrement" method="post">
+                                    <input type="hidden" name="itemId" value="<%= cart.id_games %>">
+                                    <button class="mais-menos" id="menos" type="submit">-</button>
+                                </form>
+                            </td>
+                            <td class="remove">
+                                <form action="/Cart/<%= cart.id_games %>?_method=DELETE" method="post">
+                                    <input type="hidden" name="itemId" value="<%= cart.id_games %>">
+                                    <button id="excluir" type="submit">Excluir</button>
+                                </form>
+                            </td>
+                           
+                        </tr>
 
-                </div>
+                        <% } %>
+                      <% } else { %>
+                        <tr>
+                          <td id="tede">Carrinho vazio</td>
+                        </tr>
+                      <% } %>
+                    
+                    </tbody>
+                
+                </table>
+               
+                <form id="form" action="/sale" method="POST">
+                    <label class="lab" for="">Preencha os dados abaixo:</label>
+                    <input type="text" class="products-form-input" placeholder="Nome:" name="name" required> <br>
+                    <input type="text" class="products-form-input" placeholder="Endereço:" name="adress" required> <br>
+                    <input type="text" class="products-form-input" placeholder="Contato:" name="contato" required> <br>
+                    <input type="hidden" name="products" value="">
+                    <input type="submit" value="Finalizar compra">
+                </form>
+
             </div>
+        </div>
+    </main>
+   
 
-
-
-
-
-
-        </main>
-        <%- include('partials/footer') %>
-
+    <%- include('partials/footer') %>
 </body>
