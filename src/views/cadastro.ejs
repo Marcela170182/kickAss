@@ -32,6 +32,14 @@
         </main>
         
         <%- include('partials/footer') %>
+
+        <% if (typeof(successMsg) != 'undefined') { %>
+            <script>
+              alert('<%= successMsg %>');
+            </script>
+          <% } %>
+
+          
     </body>
     
   

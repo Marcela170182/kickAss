@@ -23,7 +23,7 @@ const loginValidations =
             } 
         
         catch (error) {
-            // tratar os erros adequadamente
+           
             if(error.response.status === 404){
               throw new Error('Usuário não encontrado')
             }else{
@@ -49,7 +49,7 @@ const loginValidations =
                 }
                 return true;
             } catch (error) {
-                // tratar os erros adequadamente
+              
                 if(error.responsePassword.status === 404){
                     throw new Error('Usuário não encontrado')
                 }else{

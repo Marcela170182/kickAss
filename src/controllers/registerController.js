@@ -2,29 +2,38 @@ const path = require("path");
 const fs = require('fs');
 
 
-const readFile = () => {
-    const content = fs.readFileSync('src/database/users.json', 'utf-8');
-    return (JSON.parse(content));
-}
-
+const userRequest = require('../requests/userRequest');
 
 
 const registerController = {
-    index : (req, res) => {
+    index: (req, res) => {
         res.render('cadastro');
     },
-    register : (req, res) => {
-       
-        const { name, email, cpf, password, phone,adress, number, cep } = req.body
-        currentContent = readFile()
-        currentContent.push({name, email, cpf, password, phone,adress, number, cep})
-        fs.writeFileSync("src/database/users.json", JSON.stringify(currentContent), 'utf-8');
-        
+    register: async (req, res) => {
 
-        //res.redirect("Nova Rota");
-    
-     
+        let successMsg = "Usuário cadastrado com sucesso!"
+
+
+        let newUser = {
+
+            ...req.body,
+        }
+
+        userRequest.createUser(newUser).
+            then(userReturn => {
+                res.render('cadastro', { successMsg: successMsg });
+            })
+            .catch(error => {
+                if (error.code === 'ECONNREFUSED') {
+                    return res.render('error', { error: 'Falha na comunicação com o servidor, por favor tente mais tarde!' });
+                }
+                return res.render('error', { error });
+            })
+
+
     }
+
+
 }
 
 
