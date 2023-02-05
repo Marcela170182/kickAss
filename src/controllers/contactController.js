@@ -30,6 +30,37 @@ const contactController = {
             })
 
 
+    },
+    admContact : async (req, res) => {
+        contactRequest.getContacts().
+      then(contactsReturned => {
+        contacts = contactsReturned.data;
+        return res.render('admContact', { contacts : contacts })
+      })
+      .catch(error => {
+        if (error.code === 'ECONNREFUSED') {
+          return res.render('error', { error: 'Falha na comunicação com o servidor, por favor tente mais tarde!' });
+        }
+        return res.render('error', { error });
+      })
+
+    },
+    msgContact : async (req, res) => {
+        let id = req.params.id;
+		let contact;
+		contactRequest.getContact(id)
+		.then(contactReturn => {
+			contact = contactReturn.data;
+			res.render('msgContact', {contact : contact})
+		}
+		)
+		.catch(error => {
+            if (error.code === 'ECONNREFUSED') {
+              return res.render('error', { error: 'Falha na comunicação com o servidor, por favor tente mais tarde!' });
+            }
+            return res.render('error', { error });
+          })
+        
     }
 }
 

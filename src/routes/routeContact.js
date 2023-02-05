@@ -7,5 +7,10 @@ router.get('/Contact', contactController.index);
 router.post('/Contact',contactController.create);
 
 
+//view do admnin
+router.get('/admContact', contactController.admContact);
+router.get('/msgContact/:id', contactController.msgContact);
+
+
 
 module.exports = router;

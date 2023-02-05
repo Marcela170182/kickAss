@@ -22,7 +22,7 @@ a{
     font-family: 'Raleway', sans-serif;
 }
 #final{
-    margin-left: 900px;
+    margin-left: 790px;
 }
 #pesquisa{
     margin-left: 10px;
@@ -49,6 +49,7 @@ a{
 .navbar-menu{
     display: flex;
     align-items: center;
+    
 
 }
 

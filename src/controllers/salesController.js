@@ -7,7 +7,7 @@ const salesController = {
 		saleRequest.getSales().
 		then(productsReturned =>{
 		  products = productsReturned.data;
-		  return  res.render('listSales', {products})
+		  return  res.render('sales', {products})
 		})
 		.catch(err => {
 		  console.log('error');

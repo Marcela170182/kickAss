@@ -4,7 +4,7 @@ const def = require('./default')
 const url = 'contact'
 
 const contactRequest = {
-    getContact: () => axios({
+    getContacts: () => axios({
         ...def,
         method: 'get',
         url: `${url}`

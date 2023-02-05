@@ -13,10 +13,8 @@
 <body>
     <%- include('partials/header') %>
         <main>
-           <!-- <div class="banner-games">
-                <img class="banner-picture" src="../img/menu_fifa23.png" alt="Logo fifa 23">
-            </div>--> 
-            <section i">
+          
+            <section>
                 <img id="bannerg" src="../img/menu_fifa23.png" alt="banner como o jogo fifa 23">
             </section>
             
@@ -29,20 +27,20 @@
                 <div class="product">
                   <img class="game-img" src="/img/<%=product.img %> " alt="null">
                   <br>
-                  <%= product.title %> <br> 
-                  <%= product.price %><br>
+                  <p><%= product.title %></p> 
+                 <p> <%= product.price %></p><br>
                   <form id="form" action="/Cart" method="POST">
                     <input type="hidden" name="id_games" value="<%= product.id_games %>">
                     <input type="hidden" name="title" value="<%= product.title %>">
                     <input type="hidden" name="price" value="<%= product.price %>">
                     <input type="hidden" name="img" value="<%= product.img %>">
                     <input type="hidden" name="quantity" value="1">
-                    <input type="submit" value="Adicionar ao Carrinho">
+                    <input class="button" type="submit" value="Adicionar ao Carrinho">
                   
                   </form>
                 </div>
               <% } %>
-                    <!-- FIM DA LISTA DE JOGOS ////////////////////////////////////////////////////////-->
+                   
                   </div>
 
         </main>

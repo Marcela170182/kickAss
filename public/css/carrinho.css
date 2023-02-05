@@ -1,6 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(to right top, #0a1a0b, #0b240d, #082f0c, #043a09, #004504);
+  background-color: #0b240d;
+  background-repeat: no-repeat;
+  
+  
+ 
+}
+
+.icon-pesquisa{
+  padding-bottom: 25px;
+  margin: 15px;
+  box-sizing: border-box;
+  height: 35px;
 }
 
 .carrinho {
@@ -26,6 +37,7 @@ body {
   display: flex;
   flex-direction: row;
  justify-content: space-evenly;
+ margin-bottom: 70px;
 }
 #preco{
   color: white;
@@ -124,10 +136,13 @@ input[type="submit"] {
   margin-left: 20px;
 
 }
-/*#menos{
-  margin-bottom: 17px;
-}
-#mais{
-  margin-bottom: 20px;
+#footer-container{
+  width: 100%;
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  clear: both;
+  left: 0;
+  margin-top: 100px;
 
-  }
+}

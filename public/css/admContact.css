@@ -18,6 +18,11 @@ body{
  
 }
 
+#btn{
+    text-decoration: none;
+    color: white;
+}
+
   .container{
     margin-top: 40px;
     margin-left: 420px;
@@ -64,20 +69,40 @@ body{
   }
 
   button{
+    
     background-color:#c2cbc18b;
     border: none;
+    padding: 8px;
+    
+   
+    
   }
+ 
+#btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background-color: #53cb59;
+  font-size: 14px;
+  color: white;
+  width: 75px;
+  height: 37px;
+  border: #043a09 1px solid;
+  border-radius: 16px;
+  font-weight: bold;
+  
+}
 
   table {
-    margin-right: 80px;
+    margin-right: 120px;
     margin-top: 15px;
     border-collapse: separate;
     border-spacing: 5px 10px;
   }
   
-  th, td {
+  th, td{
     margin-right: 60px;
     padding: 10px;
     text-align: center;
-    vertical-align: top;
+    vertical-align:middle;
   }

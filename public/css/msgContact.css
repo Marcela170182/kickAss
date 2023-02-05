@@ -18,8 +18,13 @@ body{
  
 }
 
+a{
+    text-decoration: none;
+    color: yellow;
+}
+
   .container{
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 420px;
     color: black;
     display: flex;
@@ -56,28 +61,31 @@ body{
   padding: 0 10px;
   }
   
-  .img-icon{
-    padding: 8px;
-    float: left;
-    margin-right: 4px;
-  
-  }
-
-  button{
-    background-color:#c2cbc18b;
-    border: none;
-  }
-
   table {
-    margin-right: 80px;
-    margin-top: 15px;
+    margin-right: 120px;
     border-collapse: separate;
     border-spacing: 5px 10px;
   }
   
-  th, td {
+  th, td{
+    text-align: justify;
     margin-right: 60px;
     padding: 10px;
     text-align: center;
-    vertical-align: top;
+    vertical-align:middle;
   }
+
+ #btn-back{
+    background-color: #0b2e0d;
+    color: white;
+    font-weight:bold;
+    font-size: 14px;
+    border: #0a1a0b 1px solid;
+    cursor: pointer;
+    height: 35px;
+    width: 80px;
+    padding: 8px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  
+ }
