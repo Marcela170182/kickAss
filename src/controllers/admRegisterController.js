@@ -64,8 +64,12 @@ const admRegisterController = {
 			productEdit = productReturn.data;
 
 			productEdit = {
-			
-				...req.body,		
+			    
+					img : req.file.filename,
+					title: req.body.title,
+					price: req.body.price,
+					stock: req.body.stock,
+										 
 			};
 
 			return productEdit;

@@ -1,16 +1,21 @@
 const path = require('path');
 
+
+const productRequest = require('../requests/productRequest');
+
 const homeController = {
     index: (req, res) => {
-        try {
-            res.render('index')
+        productRequest.getProducts().
+      then(productsReturned => {
+        products = productsReturned.data;
+        return res.render('index', { products })
+      })
+      .catch(error => {
+        if (error.code === 'ECONNREFUSED') {
+          return res.render('error', { error: 'Falha na comunicação com o servidor, por favor tente mais tarde!' });
         }
-
-        catch (error) {
-            if (error.code === 'ECONNREFUSED') {
-                return res.render('error', { error: 'Site em manutenção!, por favor tente mais tarde!' });
-            }
-        }
+        return res.render('error', { error });
+      })
 
     }
 }

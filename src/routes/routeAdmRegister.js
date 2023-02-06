@@ -28,7 +28,7 @@ router.get('/products', authLogin, admRegisterController.index);
 router.post('/products', upload.single('img'), admRegisterController.create);
 //update product
 router.get('/edit/:id', authLogin, admRegisterController.edit);
-router.put('/edit/:id', admRegisterController.update);
+router.put('/edit/:id', upload.single('img'), admRegisterController.update);
 //destroy
 router.delete('/delete/:id', admRegisterController.destroy); 
 

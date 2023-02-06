@@ -81,7 +81,7 @@
                     <label class="lab" for="">Preencha os dados abaixo:</label>
                     <input type="text" class="products-form-input" placeholder="Nome:" name="name" required> <br>
                     <input type="text" class="products-form-input" placeholder="Endereço:" name="adress" required> <br>
-                    <input type="text" class="products-form-input" placeholder="Contato:" name="contato" required> <br>
+                    <input type="text" class="products-form-input" placeholder="Contato:" name="contact" required> <br>
                     <% if (typeof req.session.cart !== 'undefined' && req.session.cart.length > 0) { %>
                       <input type="hidden" name="price" value="<%= req.session.cart[0].price %>">
                     <% } %>

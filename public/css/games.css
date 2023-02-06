@@ -52,7 +52,13 @@ margin-left: 100px;
     border-radius: 26%;    
     background-color: #70bb7669;
 }
-
+.pd{
+    color: white;
+}
+.game-options3{
+    color: white;
+    text-decoration: none;
+}
     /* CSS DA LISTA DINAMICA DOS PRODUTOS EM EJS */
     .productList{
         background-image: linear-gradient(to right top, #0a1a0b, #0b240d, #082f0c, #043a09, #004504);

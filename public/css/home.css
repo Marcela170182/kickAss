@@ -12,10 +12,11 @@ h2{
 }
 
 .promo-list{
-    list-style: none;
-    margin:0;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+
 }
 
 .promo-img{
@@ -41,11 +42,12 @@ h2{
 
 .promo-options2{
     text-decoration: none;
-    display: block;
-    background-color: white;
+    display: flex;
+    justify-content: center;
     font-size: medium;
-    color: black;
+    color: white;
     text-transform: uppercase;
+    margin-top: 12px;
     font-weight: bold;
 }
 
@@ -71,7 +73,7 @@ h2{
 }
 
 .acessories-bar{
-    background-color:#0096408f;
+    background-color:#0c2919ec;
     padding-top: 10px;
     padding-bottom: 10px;
     
@@ -84,10 +86,10 @@ h3{
 }
 
 .acessorie-list{
-    list-style: none;
-    margin:0;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
 }
 
 .acessorie-img{

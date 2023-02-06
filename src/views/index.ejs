@@ -31,32 +31,16 @@
             <script src="../javascript/slideshow.js"></script>
             <div class="promo-bar">
                 <h2>Promoções do mês</h2>
+                
                 <ul class="promo-list">
+                    <% for (let i = 0; i < 5 && i < products.length; i++) { %>
+                        <% let product = products[i] %>  
                     <li class="promo one">
-                        <img class="promo-img" src="../img/promo_spider.png" alt="spider man">
-                        <a class="promo-options" href="">De R$189,00</a>
-                        <a class="promo-options2" href="">Por R$89,00</a>
+                        <img class="promo-img" src="../img/<%= product.img%>" alt="imagem do jogo">
+                        <a class="promo-options2" href="/Games">Por <%=product.price%></a>
                     </li>
-                    <li class="promo two">
-                        <img class="promo-img" src="../img/promo_godofwar.png" alt="God of war">
-                        <a class="promo-options" href="">De R$189,00</a>
-                        <a class="promo-options2" href="">Por R$89,00</a>
-                    </li>
-                    <li class="promo three">
-                        <img class="promo-img" src="../img/promo_horizon.png" alt="Horizon">
-                        <a class="promo-options" href="">De R$189,00</a>
-                        <a class="promo-options2" href="">Por R$89,00</a>
-                    </li>
-                    <li class="promo four">
-                        <img class="promo-img" src="../img/promo_sekiro.png" alt="Sekiro">
-                        <a class="promo-options" href="">De R$189,00</a>
-                        <a class="promo-options2" href="">Por R$89,00</a>
-                    </li>
-                    <li class="promo five">
-                        <img class="promo-img" src="../img/promo_rdr2.png" alt="Red Dead Redemption 2">
-                        <a class="promo-options" href="">De R$189,00</a>
-                        <a class="promo-options2" href="">Por R$89,00</a>
-                    </li>
+                    <% } %>
+
                 </ul>
             </div>
 
@@ -69,33 +53,15 @@
             </div>
 
             <div class="acessories-bar">
-                <h3>Acessórios</h3>
+                <h3>Promoções do mês</h3>
                 <ul class="acessorie-list">
-                    <li class="acessorie one">
-                        <img class="acessorie-img" src="../img/controle_black.png" alt="controle black">
-                        <a class="acessorie-options" href="">De R$289,00</a>
-                        <a class="acessorie-options2" href="">Por R$189,00</a>
+                    <% for (let i = 5; i < 9 && i < products.length; i++) { %>
+                        <% let product = products[i] %>  
+                    <li class="promo one">
+                        <img class="promo-img" src="../img/<%= product.img%>" alt="Red Dead Redemption 2">
+                        <a class="promo-options2" href="/Games">Por <%=product.price%></a>
                     </li>
-                    <li class="acessorie two">
-                        <img class="acessorie-img" src="../img/controle_blue.png" alt="controle blue">
-                        <a class="acessorie-options" href="">De R$289,00</a>
-                        <a class="acessorie-options2" href="">Por R$189,00</a>
-                    </li>
-                    <li class="acessorie three">
-                        <img class="acessorie-img" src="../img/controle_cinza.png" alt="controle gray">
-                        <a class="acessorie-options" href="">De R$289,00</a>
-                        <a class="acessorie-options2" href="">Por R$189,00</a>
-                    </li>
-                    <li class="acessorie four">
-                        <img class="acessorie-img" src="../img/controle_red.png" alt="controle red">
-                        <a class="acessorie-options" href="">De R$289,00</a>
-                        <a class="acessorie-options2" href="">Por R$189,00</a>
-                    </li>
-                    <li class="acessorie five">
-                        <img class="acessorie-img" src="../img/controle_blackbig.png" alt="controle black big">
-                        <a class="acessorie-options" href="">De R$289,00</a>
-                        <a class="acessorie-options2" href="">Por R$189,00</a>
-                    </li>
+                    <% } %>
                 </ul>
             </div>
 
