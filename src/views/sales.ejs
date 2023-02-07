@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/productsList.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+
+<body>
+    <%- include('partials/header2') %>
+
+    <div class="container">
+        
+        <h1>Lista de Vendas:</h1>
+        <table class="table">
+            <thead class="thead">
+                <tr class="tr">
+                    <th scope="col">ID</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Contato</th>
+
+                
+                </tr>
+                <% products.forEach(product => { %> 
+                <tr class="tr">
+                    <td scope="row"><%=product.id_sales%></td>
+                    <td>
+                        <%=product.products%>
+                      </td>
+                    <td> 
+                       
+                        <%=product.price%>
+
+                      </td>
+                      <td><%=product.name%></td>
+                      <td>
+                        <%=product.contact%>
+                      </td>
+                      
+                   
+                </tr>
+                <% }) %>
+                
+
+            </thead>
+
+        </table>
+    </div>
+</body>
+</html>

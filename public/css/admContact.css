@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+h1{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: rgb(4, 50, 31);
+}
+
+body{
+  background-color: #0045035c;
+ 
+}
+
+#btn{
+    text-decoration: none;
+    color: white;
+}
+
+  .container{
+    margin-top: 40px;
+    margin-left: 420px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color:#c2cbc18b;
+    padding: 2px 0;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px 3px rgba(50, 50, 50, 0)
+  }
+  
+  .container table{
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-left: 120px;
+    padding: 10px;
+  }
+  
+  .container table tr th{
+    height: 56px;
+    font-size: 16px;
+    font-weight: 700;
+   letter-spacing: .25px;
+   text-align: left;
+   padding: 0 10px;
+  
+  }
+  
+  .container table tr.item td {
+    border-bottom: 1px solid #c8cacc;
+  padding: 0 10px;
+  }
+  
+  .img-icon{
+    padding: 8px;
+    float: left;
+    margin-right: 4px;
+  
+  }
+
+  button{
+    
+    background-color:#c2cbc18b;
+    border: none;
+    padding: 8px;
+    
+   
+    
+  }
+ 
+#btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background-color: #53cb59;
+  font-size: 14px;
+  color: white;
+  width: 75px;
+  height: 37px;
+  border: #043a09 1px solid;
+  border-radius: 16px;
+  font-weight: bold;
+  
+}
+
+  table {
+    margin-right: 120px;
+    margin-top: 15px;
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+  }
+  
+  th, td{
+    margin-right: 60px;
+    padding: 10px;
+    text-align: center;
+    vertical-align:middle;
+  }

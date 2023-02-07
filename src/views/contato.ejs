@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/style.css">;
+    <title>Fale Conosco</title>
+    <style>
+        @font-face {
+            font-family: fontGame;
+            src: url(../font/prstartk.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main>
+            
+            
+            <h1 class="titulo">Fale conosco</h1>
+            <div class="main-container">
+                <div class="contato-forms">
+                    <form class="form" action="/Contact" method="POST">
+                       
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                        
+                        
+                        <input type="email" id="email" name="email" placeholder="Digite seu email">
+                        <br>
+                        
+                        
+                        <label>Selecione o motivo do seu contato</label>
+                        
+                        <select name="motivo" id="motivo">
+                            <option value="devol">Devolução</option>
+                            <option value="crit">Crítica</option>
+                            <option value="elog">Elogio</option>
+                            <option value="duv">Dúvida</option>
+                            <option value="pedi">Acompanhamento de pedido</option>
+                            <option value="outro">Outros</option>
+                        </select>
+                        
+                        
+                        <textarea name="" id="txt" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                        
+                    </form>
+                    
+                </div>
+                <div class="contato-image">
+                    
+                    <p>Envie sua mensagem, retornaremos o mais breve possível!!</p>
+                    <br>
+                    <img class="mario-img" src="../img/mario3.gif" alt="">
+                    
+
+                </div>
+            </div>
+
+        </main>
+
+      <%- include('partials/footer') %>
+  
+
+
+
+</body>
+
+</html>

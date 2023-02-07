@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-image: url(../img/background_games.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+main form{
+    width: 100%;
+   
+}
+
+.form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:#c2cbc14b;
+    width: 500px;
+    height: 450px;
+    padding: 35px;
+    border-radius: 8%;
+    margin-top: 15px;
+}
+
+input{
+    margin-top: 10px;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    color:#465cb4;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+#motivo{
+    margin-top: 10px;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    color:#465cb4;
+    border: none;
+    height: 45px;
+
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#txt{
+    margin-top: 10px;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    color:#465cb4;
+    border: none;
+    height: 150px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding: 10px;
+}
+
+#email, #name, #tel{
+    width: 100%;
+}
+
+
+main select{
+    width: 100%;
+}
+main textarea{
+    width: 100%;
+}
+
+main button{
+width: 100%;
+}
+label{
+    color: #072806;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #073d1f;
+    border-radius: 10px;
+    border:solid 1px #000000;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+button:hover{ 
+    background-color: #EFEFEF;
+    color: #42855B;
+    border: none;
+    height: 40px;
+    box-shadow: 3px 3px 2px gray;
+}
+.titulo{
+    color: #072806;
+    font-size: 40px;
+}
+h1{
+    font-size: 25px;
+    color: #c8c80c;
+    padding: 0px 20px;
+    margin-top: 84px;
+    margin-bottom: 5px;
+    
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+}
+.contato-forms{
+    width: 40%;
+    margin-left: 20px;
+}
+.contato-image{
+    margin-right: 200px;
+}
+.mario-img{
+    width: 380px;
+    margin-left: 240px;
+    padding-bottom: 70px;
+}
+
+p{
+    font-size: 47px;
+    font-weight: bolder;
+    color: #072806;
+    margin-left: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+
+    
+}

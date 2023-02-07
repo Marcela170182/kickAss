@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.container-login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:#c2cbc14b;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    border-radius: 8%;
+}
+.fundo{
+    background-image: linear-gradient(to right top, #0a1a0b, #0b240d, #082f0c, #043a09, #004504);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    color: rgb(255, 252, 252);
+}
+
+#login-img{
+    width: 40%;
+    margin: 18px;
+    
+}
+
+.login-form{
+    display: flex;
+    
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.login-form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-input{
+    margin-top: 10px;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    color:#465cb4;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: #073d1f;
+    border-radius: 10px;
+    border:solid 1px #000000;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+ a{
+    text-decoration: none;
+    color: #8ed889;
+    font-family: 'Raleway', sans-serif;
+ }
+
+ p{
+    color: white;
+ }

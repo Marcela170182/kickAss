@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/carrinho.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../public/css/header.css">
+    <title>KickAss</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <div class="carrinho">
+            <div class="carrinho-text">
+                
+                <table class="table">
+                   
+                    <thead>
+                        <tr>
+                            <th>PRODUTO</th>
+                            <th>PREÇO</th>
+                            <th>QTD</th>
+                            <th>EXCLUIR</th>
+                            
+                        </tr>
+                    </thead>
+                   
+                    <tfoot>
+                        <tr>
+                            <th colspan="4" style="text-align:right">Total:</th>
+                            <% if (carts && carts.length) { %>
+                            <th>R$<%= carts.reduce((acc, cart) => acc + (cart.quantity * cart.price), 0) %></th>
+                            <% } else { %>
+                              <th>R$ 0 </th>
+                              <% } %>
+                        </tr>
+                 
+                    </tfoot>
+                    
+                    <tbody>
+                      <% if (carts && carts.length) { %>
+                        <% for (let cart of carts) { %>
+                        <tr>
+                            <td> <img class="product-img" src="../../img/<%=cart.img %>" alt="produto"></td>
+                            <td id="preco">R$<%= cart.quantity * cart.price %></td>
+                            <td class="qty">
+                                <form action="/Cart/increment" method="post">
+                                    <input type="hidden" name="itemId" value="<%= cart.id_games %>">
+                                    <button id="mais" class="mais-menos" type="submit">+</button>
+                                </form>
+                                <span class="count"><%= cart.quantity %></span>
+                                <form action="/Cart/decrement" method="post">
+                                    <input type="hidden" name="itemId" value="<%= cart.id_games %>">
+                                    <button class="mais-menos" id="menos" type="submit">-</button>
+                                </form>
+                            </td>
+                            <td class="remove">
+                                <form action="/Cart/<%= cart.id_games %>?_method=DELETE" method="post">
+                                    <input type="hidden" name="itemId" value="<%= cart.id_games %>">
+                                    <button id="excluir" type="submit">Excluir</button>
+                                </form>
+                            </td>
+                           
+                        </tr>
+
+                        <% } %>
+                      <% } else { %>
+                        <tr>
+                          <td id="tede">Carrinho vazio</td>
+                        </tr>
+                      <% } %>
+                    
+                    </tbody>
+                
+                </table>
+               
+                <form id="form" action="/sale" method="POST">
+                    <label class="lab" for="">Preencha os dados abaixo:</label>
+                    <input type="text" class="products-form-input" placeholder="Nome:" name="name" required> <br>
+                    <input type="text" class="products-form-input" placeholder="Endereço:" name="adress" required> <br>
+                    <input type="text" class="products-form-input" placeholder="Contato:" name="contact" required> <br>
+                    <% if (typeof req.session.cart !== 'undefined' && req.session.cart.length > 0) { %>
+                      <input type="hidden" name="price" value="<%= req.session.cart[0].price %>">
+                    <% } %>
+                    <% if (typeof req.session.cart !== 'undefined' && req.session.cart.length > 0) { %>
+                        <input type="hidden" name="products" value="<%= req.session.cart[0].title %>">
+                      <% } %>
+                    <input type="submit" value="Finalizar compra">
+                  </form>
+
+            </div>
+        </div>
+    </main>
+   
+
+  
+</body>  <%- include('partials/footer') %>

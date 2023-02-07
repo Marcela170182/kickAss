@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size:50px;
+    color: white;
+}
+body{
+    background-image: linear-gradient(to right top, #0a1a0b, #0b240d, #082f0c, #043a09, #004504);
+    background-repeat: no-repeat;
+}
+
+.homer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.img{
+    width: 350px;
+    
+    border-radius: 10px;
+}

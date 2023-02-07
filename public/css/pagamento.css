@@ -1,0 +1,50 @@
+.pagamento{
+    
+    position: relative;
+
+}
+
+.pagamento-img{
+    width: 100%;
+    vertical-align: middle;
+    height: 800px;
+    
+    
+}
+
+h4{
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.pagamento-text{
+    position: absolute;
+    top: 20%;
+    width: 50%;
+    left: 25%;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+    .nav-produtos{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .prod{
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 0px 10px;
+    }
+    
+    .prod-options{
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin-top: none;
+    }      

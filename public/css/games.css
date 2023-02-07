@@ -1,0 +1,103 @@
+
+#bannerg{
+    width: 100%;
+    box-shadow: 10px 6px 20px 0 #111;
+    margin-top: 90px;
+}
+
+h3{
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    list-style: none;
+    margin-top: 35px;
+    margin-bottom: 35px;
+   
+   
+    width: 100%;
+    height: 100%;
+    color:white;
+}
+
+p{
+    color: white;
+    
+}
+#pe{
+margin-left: 100px;
+    font-size: 20px;
+    margin: 12px;
+    font-weight: bold;
+    
+}
+.button{
+    background-color: #53cb59;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: #0a1a0b 1px solid;
+  cursor: pointer;
+  height: 38px;
+  width: 180px;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+
+.game-img{
+    padding: 10px 50px;
+    width: 200px;
+    height: 198px;
+    border: #111  solid 2px;
+    border-radius: 26%;    
+    background-color: #70bb7669;
+}
+.pd{
+    color: white;
+}
+.game-options3{
+    color: white;
+    text-decoration: none;
+}
+    /* CSS DA LISTA DINAMICA DOS PRODUTOS EM EJS */
+    .productList{
+        background-image: linear-gradient(to right top, #0a1a0b, #0b240d, #082f0c, #043a09, #004504);
+        background-repeat: no-repeat;
+        width: 100vw;
+        
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        
+        
+        
+    }
+    
+    .product{
+        margin-left: 200px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-decoration: none;
+        background-color:none;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-size: large;
+        font-weight: bold;
+       
+    }
+
+    
+    .titutloGames{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-games{ 
+        width: 100%;
+        box-shadow: 10px 6px 20px 0 #111;
+        margin-top: 90px;
+
+    }

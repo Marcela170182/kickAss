@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>KickAss</title>
+
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main>
+
+            <div class="slideshow-banner">
+                <div class="mySlides fade">
+                    <img class="banner-picture" src="../img/banner_fifa.png" alt="Logo_fifa 23">
+                </div>
+                <div class="mySlides fade">
+                    <img class="banner-picture" src="../img/banner_godofwar.png" alt="logo banner_god of war">
+                </div>
+                <div class="mySlides fade">
+                    <img class="banner-picture" src="../img/banner_spiderman.png" alt="logo banner_spiderman">
+                </div>
+
+            </div>
+            <script src="../javascript/slideshow.js"></script>
+            <div class="promo-bar">
+                <h2>Promoções do mês</h2>
+                
+                <ul class="promo-list">
+                    <% for (let i = 0; i < 5 && i < products.length; i++) { %>
+                        <% let product = products[i] %>  
+                    <li class="promo one">
+                        <img class="promo-img" src="../img/<%= product.img%>" alt="imagem do jogo">
+                        <a class="promo-options2" href="/Games">Por <%=product.price%></a>
+                    </li>
+                    <% } %>
+
+                </ul>
+            </div>
+
+            <div class="destaque">
+                <h2>Destaque do mês</h2>
+                <div>
+                    <img class="destaque-img" src="../img/destaque_spider.png" alt="Spider Man">
+                    
+                </div>
+            </div>
+
+            <div class="acessories-bar">
+                <h3>Promoções do mês</h3>
+                <ul class="acessorie-list">
+                    <% for (let i = 5; i < 9 && i < products.length; i++) { %>
+                        <% let product = products[i] %>  
+                    <li class="promo one">
+                        <img class="promo-img" src="../img/<%= product.img%>" alt="Red Dead Redemption 2">
+                        <a class="promo-options2" href="/Games">Por <%=product.price%></a>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+
+        </main>
+        <%- include('partials/footer') %>
+
+
+        <% if (typeof(successMsg) != 'undefined') { %>
+            <script>
+              alert('<%= successMsg %>');
+            </script>
+          <% } %>
+</body>
+
+</html>
