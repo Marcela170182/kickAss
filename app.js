@@ -30,7 +30,6 @@ const routeAbout = require("./src/routes/routeAbout");
 const routeHome = require("./src/routes/routeHome");
 const routeGames = require("./src/routes/routeGames");
 const routeContact = require("./src/routes/routeContact");
-const routePayment = require("./src/routes/admList");
 const routeCart = require("./src/routes/routeCart");
 const routeLogin = require("./src/routes/routeLogin");
 const routeRegister = require('./src/routes/routeRegister');
@@ -44,7 +43,6 @@ app.use('/', routeAbout);
 app.use('/', routeHome);
 app.use('/', routeGames);
 app.use('/', routeContact);
-app.use('/', routePayment);
 app.use('/', routeCart);
 app.use('/', routeLogin);
 app.use('/', routeRegister);
@@ -57,6 +55,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/src/views');
+
+
+
 
 
 
